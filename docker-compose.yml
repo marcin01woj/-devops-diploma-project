@@ -25,9 +25,9 @@ services:
     environment:
       GF_SMTP_ENABLED: "true"
       GF_SMTP_HOST: "smtp.gmail.com:587"
-      GF_SMTP_USER: "marcin.woj.00@gmail.com"
+      GF_SMTP_USER: "${GMAIL_ADDRESS}"
       GF_SMTP_PASSWORD: "${GMAIL_APP_PASSWORD}"
-      GF_SMTP_FROM_ADDRESS: "marcin.woj.00@gmail.com"
+      GF_SMTP_FROM_ADDRESS: "${GMAIL_ADDRESS}"
       GF_SMTP_FROM_NAME: "DevOps Monitoring"
       GF_SMTP_STARTTLS_POLICY: "Mandatory"
     volumes:
